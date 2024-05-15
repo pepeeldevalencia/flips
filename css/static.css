@@ -1,0 +1,250 @@
+/* = Menu
+-------------------------------------------------------------- */
+
+#fb8 .fb8-menu {
+	
+}
+
+#fb8 .fb8-menu ul {
+	list-style: none; 
+	margin: 0;
+	padding: 0;	
+	
+	
+}
+
+#fb8 .fb8-menu li {
+	float: left;
+	position: relative;
+	width: 52px;
+	margin: 0;
+	
+	list-style: none;
+    border-right: 1px solid #474747;
+	
+	
+}
+
+
+#fb8 .fb8-menu li:last-child {
+   border-right:none;
+}
+
+
+
+#fb8 .fb8-menu li a {
+	display: block;
+	background: url(../img/icons.png) no-repeat;
+	width: 52px; height: 47px;
+}
+
+#fb8 .fb8-menu li:first-child a {
+	border-top-left-radius:7px;
+	border-bottom-left-radius:7px;
+}
+
+#fb8 .fb8-menu li:last-child a {
+	border-top-right-radius:7px;
+	border-bottom-right-radius:7px;
+}
+
+#fb8 .fb8-menu li a.fb8-download				{ background-position: 0 0; }
+#fb8 .fb8-menu li a.fb8-download:hover			{ background-position: 0 -47px; }
+
+#fb8 .fb8-menu li a.fb8-zoom-in				{ background-position: -52px 0px; }
+#fb8 .fb8-menu li a.fb8-zoom-in:hover			{ background-position: -52px -47px; }
+
+
+#fb8 .fb8-menu li a.fb8-zoom-out				{ background-position: -104px 0px; }
+#fb8 .fb8-menu li a.fb8-zoom-out:hover			{ background-position: -104px -47px; }
+
+#fb8 .fb8-menu li a.fb8-zoom-auto				{ background-position: -156px 0px; }
+#fb8 .fb8-menu li a.fb8-zoom-auto:hover		{ background-position: -156px -47px; }
+	
+#fb8 .fb8-menu li a.fb8-zoom-original			{ background-position: -208px 0px; }
+#fb8 .fb8-menu li a.fb8-zoom-original:hover	{ background-position: -208px -47px; }
+
+
+#fb8 .fb8-menu li a.fb8-show-all				{ background-position: -260px 0px; }
+#fb8 .fb8-menu li a.fb8-show-all:hover			{ background-position: -260px -47px; }
+
+
+#fb8 .fb8-menu li a.fb8-home					{ background-position: -312px 0px; }
+#fb8 .fb8-menu li a.fb8-home:hover				{ background-position: -312px -47px; }
+
+
+
+
+
+
+
+#fb8 .fb8-menu li a.contact				{ background-position: -364px 0px; }
+#fb8 .fb8-menu li a.contact:hover			{ background-position: -364px -47px; }
+
+#fb8 .fb8-menu li a.fb8-fullscreen				{ background-position: -416px 0px; }
+#fb8 .fb8-menu li a.fb8-fullscreen:hover			{ background-position: -416px -47px; }
+
+#fb8 #fb8-center.fb8-menu {
+	width: auto;
+	margin-top: 10px;
+	margin-down: 0;
+	position:absolute;
+	
+	/*
+	border-top: 3px solid #BD0E58;
+	/*/
+	
+	box-shadow: 0 -3px 0 #BD0E58;
+	
+	border-radius:9px;
+	
+	background:rgba(12,12,12,0.5);
+	
+	
+	
+	 
+	
+	/*
+	
+	margin-left: auto;
+	margin-right: auto;
+    /*/
+}
+
+
+
+#fb8 #fb8-right {
+	
+	position:absolute;
+	
+	
+	
+	margin: 10px 6px 0 0;
+}
+
+#fb8 .fb8-menu li.fb8-goto {
+	position: relative;
+	width: auto;
+	margin: -3px 4px 0px 0;
+	padding: 6px 0 0 10px;
+}
+
+#fb8 .fb8-menu li.fb8-goto #fb8-label-page-number {
+	font-family:Nunito,sans-serif;
+	display:inline;
+	float: left;
+	margin: 6px 10px 0 0;
+	line-height: 12px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #5f6f7b;
+	-webkit-font-smoothing: antialiased;
+	width:auto;
+}
+
+
+#fb8 .fb8-menu li.fb8-goto input[type='text'] {
+	font-family:Nunito;
+	font-weight: normal;
+	background: #141f28;
+	width: 28px; 
+	height: 30px;
+	border: 1px solid #1e2f3c;
+	/*box-shadow: 0px -3px 5px 1px #000000;/*/
+	padding: 0;
+	text-align: center;
+	font-size: 15px;
+	color: #FFFFFF;
+	display:block;
+	float:left;
+	border-radius:5px;
+}
+	 
+#fb8 .fb8-menu li.fb8-goto button {
+	box-shadow:none;
+	text-shadow:none;
+	font-family: Nunito;
+	border-radius:5px;
+	margin-left:5px;
+	height:31px;
+	display:block;
+	float:left;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 0 10px;
+
+}
+
+#fb8 .ui-btn-text { display: none; }
+
+
+/* = Tooltip
+-------------------------------------------------------------- */
+
+#fb8 .fb8-tooltip {
+	font-family:Nunito;
+	font-weight:normal;
+	position: absolute;
+	left: 0;
+	top: -25px;
+	z-index: 5;
+	display: none;
+	padding: 3px 6px;
+	background: #64c8d3;
+	white-space: nowrap;
+	font-size: 11px;
+	/*text-transform: uppercase
+	box-shadow: 1px 1px 1px 1px #EBEBEB;
+	/*/
+	color: white;
+	border-radius:4px;
+	
+	
+}
+	#fb8 .fb8-tooltip b {
+	/*background: url("../img/arrow-tooltip.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);/*/
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid #64c8d3;
+    bottom: -7px;
+    display: none;
+    height: 0;
+    left: 6px;
+    position: absolute;
+    width: 0;
+	}
+
+
+/* = Footer
+-------------------------------------------------------------- */
+
+#fb8 #fb8-footer {
+   opacity:0;	
+   
+}
+
+#fb8 #fb8-footer {
+	position: absolute; bottom: 0; z-index: 15;
+	/*background: url(../img/bg-footer.png);/*/
+	/*background-color: rgba(0, 0, 0, .55);/*/
+	/*border-top: 3px solid #0A334A;/*/
+	width: 100%; height: 60px;
+	margin: 0; padding: 0;
+
+}
+
+#fb8 #fb8-footer #fb8-logo {
+		position: absolute; left: 10px; top: 5px; z-index: 5;
+}
+
+#fb8 #fb8-footer .fb8-bcg-tools {
+    background-color: #000000;
+    height: 100%;
+    left: 0;
+    opacity: 0.55;
+    position: absolute;
+    top: 0;
+    width: 100%;
+	display:none;
+}
+
+
